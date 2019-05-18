@@ -13,7 +13,7 @@ RSpec.describe GramsController, type: :controller do
 
         it "should return a 404 message if we cannot find a gram with the id that is specified" do
             delete :destroy, params: { id: 'SPACEDUCK' }
-            expect(reponse).to have_http_status(:not_found)
+            expect(response).to have_http_status(:not_found)
         end
 
     end
